@@ -1,0 +1,96 @@
+# Kraken 2 custom database development
+
+[Kraken 2 manual](https://ccb.jhu.edu/software/kraken2/index.shtml?t=manual)
+
+Read manual.  It's Awesome!
+
+Go to directory to install database.
+
+```bash
+DBNAME=$(pwd)
+```
+
+Install the latest and greatest taxonomy database.
+
+```bash
+kraken2-build --download-taxonomy --db $DBNAME
+```
+
+## Install standard genomic libraries
+
+These are my favs:
+
+- archaea
+- bacteria
+- plasmid
+- viral
+- human
+- fungi
+- plant
+- protozoa
+- UniVec_Core
+
+For example:
+
+```bash
+kraken2-build --download-library archaea --db $DBNAME
+```
+
+## Install custom genomes
+
+Make a directory to gather genomes
+
+```bash
+mkdir ${DBNAME}/my_custom_genomes
+cd ${DBNAME}/my_custom_genomes
+```
+
+RefSeq genomes can be searched [here](https://www.ncbi.nlm.nih.gov/).  Search "All Databases" in the top search bar.  For example, search "bos taurus".  NCBI will return the search results and highlights a RefSeq genome assembly.  Download the Genenomic FASTA from the RefSeq database.
+
+For example I may including these in my build:
+
+- Bos taurus (cow)
+- Loxodonta africana (elephant)
+- Sus scrofa (pig)
+- Aedes albopictus (mosquito)
+- Tursiops_truncatus (bottlenose dolphin)
+- Anas_platyrhynchos (mallard)
+- gallus gallus (chicken)
+- Cyprinus carpio (common carp)
+- Nanorana parkeri(frog)
+- Odocoileus virginianus (white-tailed deer)
+
+Once genomes are downloaded transfer, unzipped genomes to `${DBNAME}/my_custom_genomes` as `.fna` files.
+
+When in `${DBNAME}/my_custom_genomes`:
+
+```bash
+for file in *fna; do kraken2-build --add-to-library $file --db $DBNAME; done
+```
+
+Build with available threads:
+
+```bash
+kraken2-build --build --threads 24 --db $DBNAME
+```
+
+Once built:
+
+```bash
+echo $DBNAME
+```
+
+This is your new database path for Kraken 2.
+
+```bash
+kraken2 --db ${DBNAME} --threads ${CPU_NUMBER} --paired ${read1} ${read2} --output ${sample_name}-outputkraken.txt --report ${sample_name}-reportkraken.txt
+```
+
+Finish with Krona graph
+
+```bash
+krona_lca_all.py -f ${sample_name}-outputkraken.txt
+ktImportTaxonomy kronaInput.txt
+mv taxonomy.krona.html ${sample_name}-taxonomy.krona.html
+mv taxonomy.krona.html.files ${sample_name}-taxonomy.krona.html.files
+```
