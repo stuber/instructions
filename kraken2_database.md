@@ -18,7 +18,7 @@ kraken2-build --download-taxonomy --db $DBNAME
 
 ## Install standard genomic libraries
 
-These are my favs:
+Favorites:
 
 - archaea
 - bacteria
@@ -49,6 +49,8 @@ RefSeq genomes can be searched [here](https://www.ncbi.nlm.nih.gov/).  Search "A
 
 For example I may including these in my build:
 
+- Canis lupus familiaris (dog)
+- Panthera tigris altaica (Amur tiger)
 - Bos taurus (cow)
 - Loxodonta africana (elephant)
 - Sus scrofa (pig)
