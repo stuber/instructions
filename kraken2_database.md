@@ -103,10 +103,10 @@ mv taxonomy.krona.html.files ${sample_name}-taxonomy.krona.html.files
 
 Build:
 ```bash
-bracken-build -d /project/bioinformatic_databases/databases/kraken/kraken2 -t 46 -k 35 -l 240
+bracken-build -d ${DBNAME} -t 46 -k 35 -l 240
 ```
 
 Run:
 ```bash
-bracken -d /project/bioinformatic_databases/databases/kraken/kraken2 -i 18-012180-353-reportkraken.txt -o 18-012180-353-bracken.txt -r 240
+bracken -d ${DBNAME} -i ${sample_name}-reportkraken.txt -o ${sample_name}-bracken.txt -r 240
 ```
