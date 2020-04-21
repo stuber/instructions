@@ -99,7 +99,7 @@ mv taxonomy.krona.html.files ${sample_name}-taxonomy.krona.html.files
 
 ## Bracken steps
 
-"library" directory with genomes used to build Kraken2 database must be present at kraken2 database location.  Read assuming 500 base chemistry.
+"library" directory with genomes used to build Kraken2 database must be present at kraken2 database location.  Read length of 240 assuming 500 base chemistry.
 
 Build:
 ```bash
