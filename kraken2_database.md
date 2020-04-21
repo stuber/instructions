@@ -96,3 +96,17 @@ ktImportTaxonomy kronaInput.txt
 mv taxonomy.krona.html ${sample_name}-taxonomy.krona.html
 mv taxonomy.krona.html.files ${sample_name}-taxonomy.krona.html.files
 ```
+
+Bracken steps
+
+"library" directory with genomes used to build Kraken2 database must be present at kraken2 database location.  Read assuming 500 base chemistry.
+
+Build:
+```bash
+bracken-build -d /project/bioinformatic_databases/databases/kraken/kraken2 -t 46 -k 35 -l 240
+```
+
+Run:
+```bash
+bracken -d /project/bioinformatic_databases/databases/kraken/kraken2 -i 18-012180-353-reportkraken.txt -o 18-012180-353-bracken.txt -r 240
+```
