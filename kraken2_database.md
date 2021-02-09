@@ -2,6 +2,8 @@
 
 [Kraken 2 manual](https://ccb.jhu.edu/software/kraken2/index.shtml?t=manual)
 
+Freely available pre-built hash files [here](https://benlangmead.github.io/aws-indexes/k2)
+
 Read manual.  It's Awesome!
 
 Go to directory to install database.
