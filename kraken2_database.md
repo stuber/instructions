@@ -2,7 +2,7 @@
 
 Freely available pre-built hash files [here](https://benlangmead.github.io/aws-indexes/k2)
 
-[Kraken 2 manual](https://ccb.jhu.edu/software/kraken2/index.shtml?t=manual)
+[Kraken 2 manual](https://github.com/DerrickWood/kraken2/wiki/Manual)
 
 Read manual.  It's Awesome!
 
