@@ -49,7 +49,7 @@ cd ${DBNAME}/my_custom_genomes
 
 RefSeq genomes can be searched [here](https://www.ncbi.nlm.nih.gov/).  Search "All Databases" in the top search bar.  For example, search "bos taurus".  NCBI will return the search results and highlight a RefSeq genome assembly.  Select the "Download" button.  Download the "Genomic FASTA" from the "RefSeq" database.  
 
-For example I may including these in my build:
+Including these in build has worked good:
 
 - Canis lupus familiaris (dog)
 - Panthera tigris altaica (Amur tiger)
