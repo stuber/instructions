@@ -51,18 +51,20 @@ RefSeq genomes can be searched [here](https://www.ncbi.nlm.nih.gov/).  Search "A
 
 Including these in build has worked good:
 
-- Canis lupus familiaris (dog)
-- Panthera tigris altaica (Amur tiger)
-- Bos taurus (cow)
-- Loxodonta africana (elephant)
-- Sus scrofa (pig)
-- Aedes albopictus (mosquito)
-- Tursiops_truncatus (bottlenose dolphin)
-- Anas_platyrhynchos (mallard)
-- gallus gallus (chicken)
-- Cyprinus carpio (common carp)
-- Nanorana parkeri(frog)
-- Odocoileus virginianus (white-tailed deer)
+- [Canis lupus familiaris (dog)](https://www.ncbi.nlm.nih.gov/assembly/GCF_000002285.5/)
+- [Panthera tigris altaica (Amur tiger)](https://www.ncbi.nlm.nih.gov/assembly/GCF_000464555.1/)
+- [Bos taurus (cow)](https://www.ncbi.nlm.nih.gov/assembly/GCF_002263795.1/)
+- [Loxodonta africana (elephant)](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001905.1/)
+- [Sus scrofa (pig)](https://www.ncbi.nlm.nih.gov/assembly/GCF_000003025.6/)
+- [Aedes albopictus (mosquito)](https://www.ncbi.nlm.nih.gov/assembly/GCF_006496715.1)
+- [Tursiops_truncatus (bottlenose dolphin)](https://www.ncbi.nlm.nih.gov/assembly/GCF_001922835.1/)
+- [Anas_platyrhynchos (mallard)](https://www.ncbi.nlm.nih.gov/assembly/GCF_003850225.1/)
+- [gallus gallus (chicken)](https://www.ncbi.nlm.nih.gov/assembly/GCF_000002315.6)
+- [Cyprinus carpio (common carp)](https://www.ncbi.nlm.nih.gov/assembly/GCF_000951615.1/)
+- [Nanorana parkeri(frog)](https://www.ncbi.nlm.nih.gov/assembly/GCF_000935625.1/)
+- [Odocoileus virginianus (white-tailed deer)](https://www.ncbi.nlm.nih.gov/assembly/GCF_002102435.1/)
+- [Felis catus (house cat)](https://www.ncbi.nlm.nih.gov/assembly/GCF_000181335.3/)
+- [Equus caballus (horse)](https://www.ncbi.nlm.nih.gov/assembly/GCF_002863925.1/)
 
 Once genomes are downloaded transfer, unzipped genomes to `${DBNAME}/my_custom_genomes` as `.fna` files.
 
