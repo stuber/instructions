@@ -65,6 +65,7 @@ Including these in build has worked good:
 - Nanorana parkeri(frog)
 - Cyprinus carpio (common carp)
 - Aedes albopictus (mosquito)
+- Dermacentor silvarum (tick)
 
 
 Once genomes are downloaded transfer, unzipped genomes to `${DBNAME}/my_custom_genomes` as `.fna` files.
