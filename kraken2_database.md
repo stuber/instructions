@@ -51,8 +51,8 @@ RefSeq genomes can be searched [here](https://www.ncbi.nlm.nih.gov/).  Search "A
 
 Including these in build has worked good:
 
-- [Bos taurus (cow)](https://www.ncbi.nlm.nih.gov/assembly/GCF_002263795.1/)
-- [Sus scrofa (pig)](https://www.ncbi.nlm.nih.gov/assembly/GCF_000003025.6/)
+- Bos taurus (cow)
+- Sus scrofa (pig)
 - [Equus caballus (horse)](https://www.ncbi.nlm.nih.gov/assembly/GCF_002863925.1/)
 - [gallus gallus (chicken)](https://www.ncbi.nlm.nih.gov/assembly/GCF_000002315.6)
 - [Canis lupus familiaris (dog)](https://www.ncbi.nlm.nih.gov/assembly/GCF_000002285.5/)
